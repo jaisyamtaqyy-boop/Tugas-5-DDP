@@ -1,0 +1,113 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyM8GouU/wzeltjHqQzwLbDe",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/jaisyamtaqyy-boop/Tugas-5-DDP/blob/main/Tugas%20DDP%20pertemuan%205\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "kendaraan = [\"nama kendaraan\",\"jenis kendaraan\",\"CC kendaraan\",\"warna Kendaraan\"]\n",
+        "\n",
+        "kendaraan.extend([\"harga kendaraan\",\"tipe kendaraan\"])\n",
+        "\n",
+        "kendaraan.insert(2, \"merekkendaraan\")\n",
+        "\n",
+        "print(kendaraan)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "lET8at2hCFyV",
+        "outputId": "6a7b6725-90e1-43d3-c1be-3bde6d3fbf04"
+      },
+      "execution_count": 16,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "['nama kendaraan', 'jenis kendaraan', 'merekkendaraan', 'CC kendaraan', 'warna Kendaraan', 'harga kendaraan', 'tipe kendaraan']\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#soal 2\n",
+        "\n",
+        "\n",
+        "print(\"Program Menghitung Luas Bangun Datar\")\n",
+        "print(\"1. Persegi\")\n",
+        "print(\"2. Lingkaran\")\n",
+        "print(\"3. Segitiga\")\n",
+        "\n",
+        "hitung = int(input(\"memilih program (1/2/3): \"))\n",
+        "\n",
+        "match hitung:\n",
+        "    case 1:\n",
+        "         sisi = float(input(\"Masukan panjang sisi: \"))\n",
+        "         luas = sisi * sisi\n",
+        "         print(luas)\n",
+        "    case 2:\n",
+        "         r = float(input(\"Masukan jari-jari lingkaran: \"))\n",
+        "         luas = 3.14 * r * r\n",
+        "         print(luas)\n",
+        "    case 3:\n",
+        "         alas = float(input(\"Masukan ala segitiga: \"))\n",
+        "         tinggi = float(input(\"Masukan tinggi segitiga: \"))\n",
+        "         luas = 0.5 * alas * tinggi\n",
+        "         print(luas)\n",
+        "    case _:\n",
+        "         print(\"SALAH PILIH\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "mPQGjkMTI3Ta",
+        "outputId": "db22cb84-c019-4ba8-f3aa-1d05fbc43156"
+      },
+      "execution_count": 20,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Program Menghitung Luas Bangun Datar\n",
+            "1. Persegi\n",
+            "2. Lingkaran\n",
+            "3. Segitiga\n",
+            "memilih program (1/2/3): 1\n",
+            "Masukan panjang sisi: 3\n",
+            "9.0\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
